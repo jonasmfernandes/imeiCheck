@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# 🔍 Verificador de IMEI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O IMEI Checker é uma aplicação simples e intuitiva para validar números de IMEI e serial. Ele verifica se o IMEI tem exatamente 15 dígitos e o serial tem até 11 caracteres, fornecendo feedback visual em tempo real.
 
-Currently, two official plugins are available:
+## Como funciona?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O IMEI Checker é uma ferramenta simples e eficiente para validar números de IMEI. Ele foi desenvolvido para garantir que o IMEI tenha exatamente 15 dígitos. A aplicação fornece feedback visual em tempo real, ajudando o usuário a identificar rapidamente se os valores inseridos são válidos ou não.
 
-## Expanding the ESLint configuration
+Quando o usuário digita o IMEI, a aplicação remove automaticamente qualquer caractere que não seja um número, garantindo que apenas dígitos sejam aceitos. O campo do IMEI só permite a entrada de até 15 dígitos. Conforme o usuário digita, a borda do input muda de cor para indicar o status:#
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Borda Branca: O campo está vazio.
 
-- Configure the top-level `parserOptions` property like this:
+# Borda Vermelha: O IMEI tem menos de 15 dígitos (inválido).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Borda Verde: O IMEI tem exatamente 15 dígitos (válido).
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao clicar no botão, o IMEI é copiado para a área de transferência. Se o IMEI for inválido e o usuário tentar clicar no botão, o input do IMEI balança (shake animation), fornecendo um feedback visual de que algo está errado.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Tecnologias Utilizadas
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Lucide Icons**
+- **Vite**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  
+## Aplicação funcionando
+
+<img src="assets/scriptPrint.png">
+
+## Print do resultado 
+
+<img src="assets/whoisExample.png">
+
+## Print do código com a biblioteca pandas para exportação CSV
+
+<img src="assets/pandasCode.png">
+
+## Print do resultado CSV no Excel
+
+<img src="assets/excelPrint.png">
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+- **NodeJS** (v16 ou superior)
+- **npm, yarn ou pnpm** 
+
+### Como executar
+1. Clone este repositório:
+  ```bash
+   git clone https://github.com/jonasmfernandes/imeiCheck.git
+  ```
+1. Acesse a pasta do projeto:
+  ```bash
+   cd imeiCheck
+  ```
+1. Vá ao arquivo main.py e execute, veja a lista de resultados ser gerada.
+
+## Autor 
+Desenvolvido por: Jonas Monteiro Fernandes
