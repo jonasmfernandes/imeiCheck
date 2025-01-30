@@ -8,11 +8,9 @@ O IMEI Checker é uma ferramenta simples e eficiente para validar números de IM
 
 Quando o usuário digita o IMEI, a aplicação remove automaticamente qualquer caractere que não seja um número, garantindo que apenas dígitos sejam aceitos. O campo do IMEI só permite a entrada de até 15 dígitos. Conforme o usuário digita, a borda do input muda de cor para indicar o status:#
 
-# Borda Branca: O campo está vazio.
-
-# Borda Vermelha: O IMEI tem menos de 15 dígitos (inválido).
-
-# Borda Verde: O IMEI tem exatamente 15 dígitos (válido).
+- Borda Branca: O campo está vazio.
+- Borda Vermelha: O IMEI tem menos de 15 dígitos (inválido).
+- Borda Verde: O IMEI tem exatamente 15 dígitos (válido).
 
 O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao clicar no botão, o IMEI é copiado para a área de transferência. Se o IMEI for inválido e o usuário tentar clicar no botão, o input do IMEI balança (shake animation), fornecendo um feedback visual de que algo está errado.
 
@@ -26,19 +24,7 @@ O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao c
   
 ## Aplicação funcionando
 
-<img src="assets/scriptPrint.png">
-
-## Print do resultado 
-
-<img src="assets/whoisExample.png">
-
-## Print do código com a biblioteca pandas para exportação CSV
-
-<img src="assets/pandasCode.png">
-
-## Print do resultado CSV no Excel
-
-<img src="assets/excelPrint.png">
+---
 
 ## Como Rodar o Projeto
 
@@ -51,11 +37,17 @@ O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao c
   ```bash
    git clone https://github.com/jonasmfernandes/imeiCheck.git
   ```
-1. Acesse a pasta do projeto:
+2. Acesse a pasta do projeto:
   ```bash
    cd imeiCheck
   ```
-1. Vá ao arquivo main.py e execute, veja a lista de resultados ser gerada.
+3. Rode a aplicação no seu navegador:
+```bash
+  npm run dev
+```
 
 ## Autor 
 Desenvolvido por: Jonas Monteiro Fernandes
+
+## Licença
+Este projeto está protegido pela licença MIT.
