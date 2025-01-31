@@ -1,8 +1,10 @@
 import "./App.css";
 import { useState } from "react";
 import { Copy } from "lucide-react";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
+ 
   const [imeiValue, setImeiValue] = useState("");
 
   const imeiVerifier = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +19,14 @@ function App() {
       navigator.clipboard.writeText(imeiValue);
     }
   };
-  
+
+  const notify = () => toast("IMEI copiado.")
+
+  const allBtn = () => {
+    copyToClipboard();
+    notify();
+  }
+
   return (
     <>
       <div className="h-screen bg-[#1F1F1F] flex justify-center items-center">
@@ -44,9 +53,17 @@ function App() {
                 ? "bg-[#1F1F1F] text-white cursor-pointer hover:bg-[#111111]"
                 : "bg-[#3e3e3e5e] text-[#aaaaaa] cursor-not-allowed"
             }`}
-            onClick={copyToClipboard}
+            onClick={allBtn}
             disabled={imeiValue.length !== 15}
           >
+            <ToastContainer
+            
+            position="top-center"
+            autoClose={1500}
+            hideProgressBar={true}
+            closeOnClick={true}
+            theme="dark"
+            />
             <Copy size={16} />
             Copy
           </button>

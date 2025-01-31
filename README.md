@@ -30,6 +30,7 @@ Neste print podemos ver que ao digitar um IMEI incorreto (14 dígitos ou menos) 
 Após inserir corretamente o IMEI do aparelho (15 dígitos) a borda do input fica verde, sinalizando que está correto. Botão de copiar é liberado.
 
 <img src="src/assets/correctValidation3.png">
+
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
