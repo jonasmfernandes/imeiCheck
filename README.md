@@ -25,7 +25,7 @@ O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao c
 
 Neste print podemos ver que ao digitar um IMEI incorreto (14 dígitos ou menos) a borda do input fica vermelha, sinalizando que está errado e faltando números. Com isso, o botão de copiar fica desabilitado.
 
-<img src="src/assets/Captura de tela 2025-01-31 132404.png.png">
+<img src="src/assets/Captura de tela 2025-01-31 132404.png">
 
 ## Como Rodar o Projeto
 
