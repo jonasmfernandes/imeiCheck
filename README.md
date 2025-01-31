@@ -21,12 +21,6 @@ O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao c
 - **Lucide Icons**
 - **Vite**
 
-  
-## Aplicação funcionando
-
-<img src="src/assets/correctValidation.png">
-<img src="src/assets/errorValidation.png">
-
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
