@@ -1,4 +1,4 @@
-# 🔍 Verificador de IMEI
+# 📱 Verificador de IMEI
 
 O IMEI Checker é uma aplicação simples e intuitiva para validar números de IMEI e serial. Ele verifica se o IMEI tem exatamente 15 dígitos e o serial tem até 11 caracteres, fornecendo feedback visual em tempo real.
 
