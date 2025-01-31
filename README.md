@@ -24,8 +24,8 @@ O botão "Copy" só fica habilitado quando o IMEI é válido (15 dígitos). Ao c
   
 ## Aplicação funcionando
 
-<img src="/imeiCheck/src/assets/correctValidation.png">
-<img src="/imeiCheck/src/assets/errorValidation.png">
+<img src="imeiCheck/src/assets/correctValidation.png">
+<img src="imeiCheck/src/assets/errorValidation.png">
 
 ## Como Rodar o Projeto
 
